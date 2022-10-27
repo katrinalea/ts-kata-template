@@ -4,10 +4,7 @@ Array can contain numbers or strings. X can be either.
 
 Return true if the array contains the value, false if not. */
 
-function containsValue(
-  array: any[],
-  value: number | string
-): boolean {
+function containsValue(array: any[], value: number | string): boolean {
   return array.includes(value);
   // for (let item of array) {
   // if (item === value) {
@@ -16,4 +13,6 @@ function containsValue(
   //  return false;
   //  }
 }
+console.log(containsValue([1, 2, 3], 3));
+
 export default containsValue;
